@@ -1,7 +1,7 @@
 /* General styles */
 body {
   font-family: 'Helvetica Neue', Arial, sans-serif;
-  background-color: #f5f5f5;
+  background-color: #f9f9f9;
   margin: 0;
   padding: 0;
   display: flex;
@@ -16,47 +16,49 @@ body {
   margin: 20px;
   padding: 20px;
   background-color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  border-top: 8px solid #FFD700; /* Yellow border at the top */
 }
 
 /* Form styles */
 form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
 }
 
 label {
-  font-weight: 500;
-  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
 }
 
 input {
   padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
+  border: 2px solid #ddd;
+  border-radius: 6px;
   font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #FFD700; /* Yellow border on focus */
+  outline: none;
 }
 
 button {
   padding: 12px;
   font-size: 1rem;
-  background-color: #007BFF;
+  background-color: #FFD700; /* Yellow background */
   color: white;
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #0056b3;
-}
-
-input:focus {
-  border-color: #007BFF;
-  outline: none;
+  background-color: #e0c200; /* Darker yellow on hover */
 }
 
 span[role="alert"] {
